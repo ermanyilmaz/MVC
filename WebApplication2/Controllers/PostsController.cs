@@ -11,7 +11,7 @@ namespace WebApplication2.Controllers
         // GET: Posts
         public ActionResult Index()
         {
-            return Content("Hello from Posts Controller!");
+            return View();
         }
         
     }

@@ -1,0 +1,27 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+    <title>@ViewBag.Title - Simple Blog</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="@Url.RouteUrl("home")">Click to go Home</a>
+        </h1>
+        <a href="@Url.RouteUrl("login")">Login</a>
+    </header>
+    <!--Inser View Here-->
+    @RenderBody()
+    <footer>
+        &copy; @DateTime.UtcNow.Year Me
+    </footer>
+    @RenderSection("Scripts", false)
+    
+</body>
+</html>

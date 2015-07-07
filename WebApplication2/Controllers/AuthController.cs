@@ -11,7 +11,7 @@ namespace WebApplication2.Controllers
         // GET: Auth
         public ActionResult Login()
         {
-            return Content("Inside of the Auth Controller !");
+            return View();
         }
     }
 }
